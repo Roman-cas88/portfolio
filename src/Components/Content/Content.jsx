@@ -1,10 +1,15 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { About } from './Home/About'
+import { Education } from './Home/Education'
+import { Home } from './Home/Home'
+
 
 export const Content = () => {
   return (
-    <Container>
-            Content
-    </Container>
+    <>
+      <Home />
+      <About />
+      <Education />  
+    </>
   )
 }
