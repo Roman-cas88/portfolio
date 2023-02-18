@@ -14,33 +14,45 @@ export const Header = () => {
             <NavLink>
               <Link to='home'
                     activeClass="active" 
-                    spy={true} 
-                    smooth={true} 
-                    duration={500}>
+                    spy={true}>
                 Home
               </Link>
             </NavLink>
             <NavLink>
               <Link to='about'
                     activeClass="active" 
-                    spy={true} 
-                    smooth={true} 
-                    duration={500}>
+                    spy={true}>
                 About me
               </Link>
             </NavLink>
             <NavLink>
               <Link to='education'
                     activeClass="active" 
-                    spy={true} 
-                    smooth={true} 
-                    duration={500}>
+                    spy={true}>
                 My education
               </Link>
             </NavLink>
-            <NavLink>My experience</NavLink>
-            <NavLink>Portfolio</NavLink>
-            <NavLink>Contact</NavLink>
+            <NavLink>
+              <Link to='expirience'
+                      activeClass="active" 
+                      spy={true}>
+                My experience
+              </Link>
+            </NavLink>
+            <NavLink>
+              <Link to='portfolio'
+                      activeClass="active" 
+                      spy={true}>
+                Portfolio
+              </Link>
+            </NavLink>
+            <NavLink>
+              <Link to='contact'
+                      activeClass="active" 
+                      spy={true}>
+                Contact
+              </Link>
+            </NavLink>
           </Nav>
           </Navbar.Collapse>
         </Container>

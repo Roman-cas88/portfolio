@@ -3,8 +3,10 @@ import { Container } from 'react-bootstrap'
 
 export const Education = () => {
   return (
-        <Container style={{height:"100vh", backgroundColor:"grey"}} id='education'>
+    <div  className='pages' style={{backgroundColor:"grey"}} id='education'>
+        <Container>
             Education
         </Container>
+    </div>
     )
 }

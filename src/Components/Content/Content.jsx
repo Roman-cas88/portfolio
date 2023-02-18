@@ -1,7 +1,11 @@
 import React from 'react'
-import { About } from './Home/About'
-import { Education } from './Home/Education'
-import { Home } from './Home/Home'
+import { About } from './Pages/About'
+import { Contact } from './Pages/Contact'
+import { Education } from './Pages/Education'
+import { Expirience } from './Pages/Expirience'
+import { Home } from './Pages/Home'
+import { Portfolio } from './Pages/Portfolio'
+import './Pages/Pages.css'
 
 
 export const Content = () => {
@@ -9,7 +13,10 @@ export const Content = () => {
     <>
       <Home />
       <About />
-      <Education />  
+      <Education />
+      <Expirience />
+      <Portfolio />
+      <Contact />  
     </>
   )
 }

@@ -1,11 +1,11 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 
-export const Footer = () => {
+export const Portfolio = () => {
   return (
-    <div className='p-5 text-center' style={{backgroundColor:'black', color:'white'}}>
+    <div className='pages' id='portfolio' style={{backgroundColor:"blue"}}>
       <Container>
-        Footer
+          Portfolio
       </Container>
     </div>
   )
