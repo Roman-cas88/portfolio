@@ -5,8 +5,8 @@ export const Home = () => {
   return (
     <div  className='pages' id="home">
       <Container className=''>
-              <h1>Hello, my name is Roman Orekhovskyi</h1>
-              <h2>This is my own website about me</h2> 
+              <h1>Hello there, I'm Roman Orekhovskyi</h1>
+              <h2>Web developer based in Stockholm</h2> 
       </Container>
   </div>
   )
