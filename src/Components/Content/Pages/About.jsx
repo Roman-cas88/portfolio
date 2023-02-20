@@ -5,6 +5,8 @@ export const About = () => {
   return (
     <div className='pages' style={{backgroundColor:"yellow"}} id='about'>
       <Container>
+        <h1>About me</h1>
+     <p>
       My name is Roman Orekhovskyi. I came to Sweden from Ukraine in July.
 
 I have a higher academic education for a specialist degree in project and program management. Studying at this faculty allowed me to acquire versatile theoretical knowledge, as well as get acquainted with HTML and CSS.
@@ -21,6 +23,7 @@ In my free time, I love learning new things and spending time with my family.
 I am sure that I will be useful to the company, last two years in Ukraine I have worked in non-standard conditions for me, completing projects that are not familiar to me from the technical side, but I did not give up and always found solutions to problems by communicating with customers, specialists in this field and reading the documentation.
  
 
+      </p> 
       </Container>
     </div>
   )
