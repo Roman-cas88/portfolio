@@ -1,5 +1,6 @@
 import React from 'react'
-import { Container, Navbar, NavLink, Nav } from 'react-bootstrap'
+import { Container, Navbar, Nav } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
 import { Link } from 'react-scroll'
 
 export const Header = () => {
@@ -7,7 +8,7 @@ export const Header = () => {
     <div>
         <Navbar className='bg-secondary' fixed='top'>
         <Container>
-          <Navbar.Brand href="#home" className='logo'>Roman Orekhovskyi</Navbar.Brand>
+          <Navbar.Brand className='logo'><NavLink to='/' style={{all:"unset", cursor:'pointer'}}>Roman Orekhovskyi</NavLink></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
           <Nav className="justify-content-end flex-grow-1">

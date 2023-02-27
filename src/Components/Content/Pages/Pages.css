@@ -16,6 +16,9 @@
     color: wheat;
     font-weight: bold;
 }
+.logo:hover {
+  color: rgb(229, 208, 170);
+}
 
 #navbarScroll a {
     text-decoration: none;

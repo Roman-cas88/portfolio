@@ -66,7 +66,7 @@ export const Calculator = () => {
         return <Button value={props.name} variant={props.variant} onClick={props.function} className='w-100'>{props.name}</Button>
     }
   return (
-    <Container style={{backgroundColor:"rgba(255,230,156,0.5)", maxWidth:"250px"}} className='border border-4 border-primary rounded'>
+    <Container style={{backgroundColor:"rgba(255,230,156,0.5)", maxWidth:"250px", marginTop:'100px'}} className='mb-2 border border-4 border-primary rounded'>
         <Row className='mx-1 my-3 '>
             <input 
                 style={{backgroundColor:"rgba(207,244,252,0.5)"}} 
