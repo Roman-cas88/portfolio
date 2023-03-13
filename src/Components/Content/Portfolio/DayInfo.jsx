@@ -4,6 +4,7 @@ import { GoLocation } from 'react-icons/go';
 import { AiTwotoneCalendar, AiOutlineClockCircle } from 'react-icons/ai';
 import axios from 'axios'
 import Clock from 'react-live-clock';
+import BounceLoader from "react-spinners/ClipLoader";
 
 export const DayInfo = () => {
     // Get API key from https://openweathermap.org
@@ -22,28 +23,14 @@ export const DayInfo = () => {
     
     // Fetch API using axios
     const [apiResult, setApiResult] = useState([])
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(false)    
     useEffect(() => {
-        const controller = new AbortController()
-        const signal = controller.signal
-
-        const fetchData = async () => {
-            try {
-                const res = await axios.get(
-                    apiUrl, 
-                    {
-                        signal: signal,
-                    }
-                )
-                setApiResult(res.data);
-                setLoading(true)
-            } catch(err) {console.log(err)}
-        }
-        fetchData()
-        return () => {
-            controller.abort()
-        }
-    }, [apiUrl])
+            axios.get(apiUrl).then(
+                res => {
+                    setApiResult(res.data);
+                    setLoading(true)
+                }).catch(err => console.log(err))
+        }, [apiUrl])
 
     // Get current date
     let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -131,10 +118,9 @@ export const DayInfo = () => {
     }
   return (
     <div className='mt-5 mb-3 pt-3'>
-        <Container>
-            {loading ? <WeatherCard /> : <h1>Loading....</h1>}
+        <Container className='text-center'>
+            {loading ? <WeatherCard /> : <BounceLoader color="lightblue" size={100}/>}
         </Container>
-        
     </div>
   )
 }
