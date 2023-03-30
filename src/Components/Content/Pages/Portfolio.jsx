@@ -8,7 +8,8 @@ export const Portfolio = () => {
       <Container>
           Portfolio <br/>
           <Link to='/calculator'>Calculator</Link> <br />
-          <Link to='/day-info'>Day Info</Link>
+          <Link to='/day-info'>Day Info</Link> <br />
+          <Link to='/registration'>Registaration</Link>
       </Container>
     </div>
   )
